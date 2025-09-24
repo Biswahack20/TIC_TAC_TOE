@@ -138,10 +138,9 @@ function checkwin(){
             cell[win[i][2]].style.backgroundColor="lightgreen";
             cell.forEach(function(box){
         box.disabled=true;
-    }); 
-            reset.forEach(function(reset){
+    });
             reset.disabled=true;
-        });
+            return;
     }    
 }
 let tie=true;
@@ -154,6 +153,7 @@ let tie=true;
         status.style.backgroundColor="red";
         status.innerText="it's a tie,lets play once again";
     }
+}
         
 
         </script>
