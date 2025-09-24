@@ -98,6 +98,9 @@ reset.addEventListener("click",function(){
     cell.forEach(function(box){
         box.innerText="";
         box.disabled=false;
+        box.style.backgroundColor="";
+        turn0=false;
+        status.innerText="";
     });
 });
 newgame.addEventListener("click",function(){
