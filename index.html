@@ -143,6 +143,11 @@ function checkwin(){
             reset.disabled=true;
         });
     }
+        else{
+            status.innerText="It's a draw";
+            cell.forEach(function(box){
+                box.style.backgroundcolor="red";
+                box.disabled=true;
 }
 }
 
