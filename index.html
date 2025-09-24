@@ -133,6 +133,9 @@ function checkwin(){
             cell[win[i][0]].style.backgroundColor="lightgreen";
             cell[win[i][1]].style.backgroundColor="lightgreen";
             cell[win[i][2]].style.backgroundColor="lightgreen";
+            cell.forEach(function(box){
+        box.disabled=true;
+    });    
         }
     }
 }
