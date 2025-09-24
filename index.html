@@ -142,14 +142,17 @@ function checkwin(){
             reset.forEach(function(reset){
             reset.disabled=true;
         });
+            return;
+    }    
+}
+let tie=true;
+    cell.forEach(function(box){
+        if(box.innerText===""){
+            tie=false;
+        }});
+    if(tie){
+        style.innerText="it's a tie, lets try once again";
     }
-        else{
-            status.innerText="It's a draw";
-            cell.forEach(function(box){
-                box.style.backgroundcolor="red";
-                box.disabled=true;
-}
-}
 
         </script>
     </main>
