@@ -147,12 +147,15 @@ function checkwin(){
 }
 let tie=true;
     cell.forEach(function(box){
-        if(box.innerText===""){
+        if(box.innerText === "" ){
             tie=false;
-        }});
-    if(tie){
-        style.innerText="it's a tie, lets try once again";
+        }
+});
+    if(tie === true){
+        status.style.backgroundColor="red";
+        status.innerText="it's a tie,lets play once again";
     }
+        
 
         </script>
     </main>
